@@ -18,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Added favicon */}
+        <link rel="icon" href="public\ATS.ico" type="image/x-icon" />
+      </head>
       <body className={`${inter.className} dark`}>
         <ThemeProvider
           attribute="class"
