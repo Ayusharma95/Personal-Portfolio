@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Existing CSS variables and configurations */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+/* Scroll Animation Classes */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar Animation Classes */
+.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add animation delay utilities */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
